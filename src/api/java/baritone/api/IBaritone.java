@@ -18,6 +18,7 @@
 package baritone.api;
 
 import baritone.api.behavior.ILookBehavior;
+import baritone.api.behavior.IHighlightBehavior;
 import baritone.api.behavior.IPathingBehavior;
 import baritone.api.cache.IWorldProvider;
 import baritone.api.command.manager.ICommandManager;
@@ -45,6 +46,12 @@ public interface IBaritone {
      * @see ILookBehavior
      */
     ILookBehavior getLookBehavior();
+
+    /**
+     * @return The {@link IHighlightBehavior} instance
+     * @see IHighlightBehavior
+     */
+    IHighlightBehavior getHighlightBehavior();
 
     /**
      * @return The {@link IFollowProcess} instance
